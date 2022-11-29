@@ -1,0 +1,45 @@
+problema repaso:
+29/11/2022
+
+1. Inicio
+2. contador,i[0-n]<--1
+3. numeroEmpleado, i[0-n]
+4. nombre, x(20)[{a-z},{A-Z},{BS}]
+5. cedula, i[0-n]
+6. horastrabajadasM,d[0-n]
+7. horastrabajadasN,d[0-n]
+8. precioMatutino, i[0-n]<--10
+9. precioNocturno, i[0-n]<--15
+10. adicion,i[0-n]<--10
+11. descuento, d[0-n]
+12. sueldoFinal,d[0-n]
+13. bandera, l <--True
+14. mensaje, x (500)[{A-Z},{a-z},{BS}]<-- ""
+15. opcion, x(1)[{A-Z},{a-z}]
+16.Mientras bandera == true entoces
+17.    Escribir "Ingrese su nombre:"
+18.     Leer nombre
+19.    Escribir "ingrese su cedula de identidad:"
+20.     Leer cedula
+21.    Escribir "cuantas horas trabajo en la mañana:"
+22.     Leer horastrabajadasM
+23.    Escribir "cuantas horas trabajo en la noche:"
+24.     Leer horastrabajadasN
+25.     mensaje<-- mensaje + "Nomina de trabajdores+ "\n" + "Rol del trabajador de nombre" + nombre + "y cedula" + cedula + "\n"
+26.              +  "Horas matutina trabajadas:" + horastrabajadasM + "\n" + " Horas nocturnas trabajadas:" 
+27.              +  horastrabajadasN + "\n\n"
+28.    Escribir "desea terminar el proceso ingrese la letra P para terminar"
+29.     Leer opcion
+30.     Si opcion == "P" entonce
+31.      bandera <-- false
+32.     FinSi
+33.       sueldofinal <-- horastrabajadasM * precioMatutino
+34.       sueldoFinal<-- sueldoFinal +  (horastrabajadasN * precioNocturno)
+35.   Si horastrabajadasN >= 10 entoces 
+36.       sueldoFinal <-- sueldoFinal * adicion / 100
+37.   fin si   
+38.       contador <-- contador + 1
+39.  mensaje <-- mensaje + "Total a cancelar" + "$" + sueldoFinal + "\n\n" + "Número de empleados" + contador
+40.fin Mientras
+41.    Escribir mensaje
+42.   fin
